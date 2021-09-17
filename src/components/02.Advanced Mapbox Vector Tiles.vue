@@ -11,6 +11,7 @@ import { Fill, Icon, Stroke, Style, Text } from "ol/style";
 import { get as getProjection } from "ol/proj";
 export default defineComponent({
   setup() {
+    // mapbox 秘钥
     const key =
       "pk.eyJ1Ijoic3VtbWVyLTE5OTUiLCJhIjoiY2t0MzJuYzcyMHRybTMxcGtvZ2Z0NTVidiJ9.KPHtEGK0ndWln-KV2ohEmw";
     // Calculation of resolutions that match zoom levels 1, 3, 5, 7, 9, 11, 13, 15.
