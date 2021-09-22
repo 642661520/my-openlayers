@@ -20,4 +20,8 @@ import MyMenu from "./components/MyMenu.vue";
 .menu{
   width: 20%;
 }
+.map {
+  width: 100%;
+  height: 500px;
+}
 </style>
