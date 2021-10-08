@@ -47,6 +47,31 @@ const routes = [
     path: '/08.BingMaps',
     component: () => import('../components/08.Bing Maps.vue'),
   },
+  {
+    path: '/09.BoxSelection',
+    component: () => import('../components/09.Box Selection.vue'),
+  },
+  {
+    path: '/10.CanvasTiles',
+    component: () => import('../components/10.Canvas Tiles.vue'),
+  },
+  {
+    path: '/11.CartoDBsourceexample',
+    component: () => import('../components/11.CartoDB source example.vue'),
+  },
+  {
+    path: '/12.CloudOptimizedGeoTIFF(COG)',
+    component: () =>
+      import('../components/12.Cloud Optimized GeoTIFF (COG).vue'),
+  },
+  {
+    path: '/13.ClusteredFeatures',
+    component: () => import('../components/13.Clustered Features.vue'),
+  },
+  {
+    path: '/14.ColorManipulation',
+    component: () => import('../components/14.Color Manipulation.vue'),
+  },
 ];
 const router = VueRouter.createRouter({
   history: VueRouter.createWebHashHistory(),

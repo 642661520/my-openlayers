@@ -37,8 +37,8 @@ const handleUpdateValue = (value, option) => {
 };
 // 检测选项变化改变图层可见性
 watch(value,(newValue, oldValue) => {
-  layers[oldValue].setVisible(false);
   layers[newValue].setVisible(true);
+  layers[oldValue].setVisible(false);
 });
 
 onMounted(() => {

@@ -53,6 +53,8 @@ const map = new Map({
 /**定位到区域 */
 const ZoomToSwitzerland = () => {
   const feature = source.getFeatures()[0];
+  console.log(feature);
+  
   const polygon = feature.getGeometry();
   map.getView().fit(polygon, { padding: [170, 50, 30, 150] });
 };
