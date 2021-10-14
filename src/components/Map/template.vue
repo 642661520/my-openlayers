@@ -5,15 +5,11 @@ import Map from "ol/Map";
 import OSM from "ol/source/OSM";
 import TileLayer from "ol/layer/Tile";
 import View from "ol/View";
-import TileDebug from "ol/source/TileDebug";
 
 const map = new Map({
   layers: [
     new TileLayer({
       source: new OSM({}),
-    }),
-    new TileLayer({
-      source: new TileDebug(),
     }),
   ],
   view: new View({
@@ -32,3 +28,9 @@ onMounted(() => {
 <template>
   <div id="map" class="map"></div>
 </template>
+<style scoped>
+.map{
+  width: 100%;
+  height: 300px;
+}
+</style>

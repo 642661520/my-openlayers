@@ -49,4 +49,12 @@ const handleZoomIn = () => {
     <n-button @click="handleZoomOut">缩小</n-button>
     <span>层级{{ zoom }}</span>
   </NSpace>
+  <p>
+    <div>知识点：</div>
+    <div>设置地图dom元素 map.setTarget("map");</div>
+    <div>获取view map.getView();</div>
+    <div>获取zoom view.getZoom();</div>
+    <div>设置zoom view.setZoom(Number);</div>
+    <div>zoom改变监听事件 map.getView().on("change:resolution",function(e){});</div>
+  </p>
 </template>

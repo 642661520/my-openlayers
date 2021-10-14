@@ -56,4 +56,7 @@ onMounted(() => {
 
 <template>
   <div id="map" class="map"></div>
+  <p>
+    <div>来自mapbox的矢量地图数据</div>
+  </p>
 </template>

@@ -1,27 +1,20 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import MyMenu from "./components/MyMenu.vue";
+import Haeder from "./components/header/index.vue";
 </script>
 <template>
-  <MyMenu class="menu" />
-  <div class="content">
+  <Haeder />
+  <div class="main">
     <router-view />
   </div>
 </template>
 
-<style>
+<style lang="scss">
 #app {
-  display: flex;
-}
-.content{
-  width: 80%;
-}
-.menu{
-  width: 20%;
-}
-.map {
-  width: 100%;
-  height: 700px;
+  height: 100%;
+  .main {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 50px);
+  }
 }
 </style>

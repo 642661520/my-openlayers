@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, ref } from "vue";
+import { onMounted, ref, watch } from "vue";
 import "ol/ol.css";
 import ImageLayer from "ol/layer/Image";
 import Map from "ol/Map";
@@ -139,6 +139,16 @@ const map = new Map({
 onMounted(() => {
   // 设置Target
   map.setTarget("map");
+});
+
+watch(hue, () => {
+  raster.changed();
+});
+watch(chroma, () => {
+  raster.changed();
+});
+watch(lightness, () => {
+  raster.changed();
 });
 </script>
 

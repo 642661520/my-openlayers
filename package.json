@@ -7,6 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.23.0",
     "element-plus": "^1.1.0-beta.8",
     "naive-ui": "^2.19.1",
     "ol": "^6.8.1",

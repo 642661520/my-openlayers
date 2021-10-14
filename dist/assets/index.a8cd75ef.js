@@ -1,0 +1,1 @@
+import{o as e,c as t,b as s}from"./vendor.a926ca27.js";const n={},r={style:{width:"100%","text-align":"center","margin-top":"10%"}},a=[s("img",{src:"https://openlayers.org/assets/theme/img/logo70.png",width:"200"},null,-1),s("div",{style:{"font-size":"50px"}},"My OpenLayers examples",-1)];n.render=function(s,n){return e(),t("div",r,a)};export{n as default};
