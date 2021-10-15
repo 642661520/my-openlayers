@@ -6,6 +6,7 @@ import OSM from "ol/source/OSM";
 import TileLayer from "ol/layer/Tile";
 import View from "ol/View";
 import { NButton, NSpace } from "naive-ui";
+const map_ref=ref();
 const map = new Map({
   layers: [
     new TileLayer({
@@ -24,7 +25,7 @@ const map = new Map({
 const zoom = ref(map.getView().getZoom());
 onMounted(() => {
   // 设置Target
-  map.setTarget("map");
+  map.setTarget(map_ref.value);
   // 分辨率改变时对zoom重新赋值
   map.getView().on("change:resolution", function (e) {
     zoom.value = map.getView().getZoom();
@@ -43,7 +44,7 @@ const handleZoomIn = () => {
 };
 </script>
 <template>
-  <div id="map" class="map"></div>
+  <div class="map" ref="map_ref"></div>
   <NSpace>
     <n-button @click="handleZoomIn">放大</n-button>
     <n-button @click="handleZoomOut">缩小</n-button>
