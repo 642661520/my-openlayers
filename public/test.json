@@ -1,8 +1,0 @@
-{
-  "examples":[
-    {
-      "path":"test",
-      "component":"/src/view/examples/test.vue"
-    }
-  ]
-}

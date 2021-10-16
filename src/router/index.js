@@ -101,6 +101,9 @@ const routes = [
       {
         path: '19.CustomCircleRender',
         component: () => import('../view/examples/19.Custom Circle Render.vue'),
+      },{
+        path: '20.CustomControls',
+        component: () => import('../view/examples/20.Custom Controls.vue'),
       },
     ],
   },

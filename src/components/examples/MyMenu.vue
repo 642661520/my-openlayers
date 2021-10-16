@@ -20,6 +20,7 @@
     <router-link to="/examples/17.CustomAnimation"><el-button type="text">17.Custom Animation</el-button></router-link>
     <router-link to="/examples/18.CustomCanvasTiles"><el-button type="text">18.Custom Canvas Tiles</el-button></router-link>
     <router-link to="/examples/19.CustomCircleRender"><el-button type="text">19.Custom Circle Render</el-button></router-link>
+    <router-link to="/examples/20.CustomControls"><el-button type="text">20.Custom Controls</el-button></router-link>
   </div>
 </template>
 <script setup></script>

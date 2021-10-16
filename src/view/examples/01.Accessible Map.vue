@@ -12,7 +12,7 @@ const map = new Map({
     new TileLayer({
       source: new OSM({
         // 设置归属版权信息
-        attributions: '© <a href="#/01.AccessibleMap">test</a>',
+        attributions: '© <a href="/">test</a>',
       }),
     }),
   ],

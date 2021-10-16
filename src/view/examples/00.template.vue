@@ -5,7 +5,7 @@ import Map from "ol/Map";
 import OSM from "ol/source/OSM";
 import TileLayer from "ol/layer/Tile";
 import View from "ol/View";
-
+const map_ref=ref();
 const map = new Map({
   layers: [
     new TileLayer({
@@ -21,10 +21,10 @@ const map = new Map({
 
 onMounted(() => {
   // 设置Target
-  map.setTarget("map");
+  map.setTarget(map_ref.value);
 });
 </script>
 
 <template>
-  <div id="map" class="map"></div>
+  <div class="map"></div>
 </template>
